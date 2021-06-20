@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala | LogIn/SignUp</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login_signup.css">
+
+    <!-- Adding icon in the title bar -->
+    <link rel="icon" href="img/Kerala.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Advanced login/signup form with js validation -->
+<!-- <div class="container mt-2 mb-4">
+    <div class="col-sm-8 ml-auto mr-auto">
+      <ul class="nav nav-pills nav-fill mb-1" id="pills-tab" role="tablist">
+        <li class="nav-item"> <a class="nav-link active" id="pills-signin-tab" data-toggle="pill" href="#pills-signin" role="tab" aria-controls="pills-signin" aria-selected="true">Sign In</a> </li>
+        <li class="nav-item"> <a class="nav-link" id="pills-signup-tab" data-toggle="pill" href="#pills-signup" role="tab" aria-controls="pills-signup" aria-selected="false">Sign Up</a> </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-signin" role="tabpanel" aria-labelledby="pills-signin-tab">
+          <div class="col-sm-12 border border-primary shadow rounded pt-2">
+            <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
+            <form method="post" id="singninFrom">
+              <div class="form-group">
+                <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter valid email" required>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">Password <span class="text-danger">*</span></label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <label><input type="checkbox" name="condition" id="condition"> Remember Me</label>
+                  </div>
+                  <div class="col text-right"> <a href="javascript:;" data-toggle="modal" data-target="#forgotPass">Forgot Password?</a> </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="submit" value="Sign In" class="btn btn-block btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
+          <div class="col-sm-12 border border-primary shadow rounded pt-2">
+            <div class="text-center"><img src="https://placehold.it/80x80" class="rounded-circle border p-1"></div>
+            <form method="post" id="singnupFrom">
+              <div class="form-group">
+                <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
+                <input type="email" name="signupemail" id="signupemail" class="form-control" placeholder="Enter valid email" required>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">User Name <span class="text-danger">*</span></label>
+                <input type="text" name="signupusername" id="signupusername" class="form-control" placeholder="Choose your user name" required>
+                <div class="text-danger"><em>This will be your login name!</em></div>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">Phone #</label>
+                <input type="text" name="signupphone" id="signupphone" class="form-control" placeholder="Enter 10 digit phone number">
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">Password <span class="text-danger">*</span></label>
+                <input type="password" name="signuppassword" id="signuppassword" class="form-control" placeholder="***********" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;"
+                  required>
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bold">Confirm Password <span class="text-danger">*</span></label>
+                <input type="password" name="signupcpassword" id="signupcpassword" class="form-control" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="***********" required>
+              </div>
+              <div class="form-group">
+                <label><input type="checkbox" name="signupcondition" id="signupcondition" required> I agree with the <a href="javascript:;">Terms &amp; Conditions</a> for Registration.</label>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="signupsubmit" value="Sign Up" class="btn btn-block btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form method="post" id="forgotpassForm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Forgot Password</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Email <span class="text-danger">*</span></label>
+                <input type="email" name="forgotemail" id="forgotemail" class="form-control" placeholder="Enter your valid email..." required>
+              </div>
+              <div class="form-group">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign In</button>
+              <button type="submit" name="forgotPass" class="btn btn-primary"><i class="fa fa-envelope"></i> Send Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand font-weight-bold" href="index.html">
+      <img src="img/Kerala.jpg" alt="KL" width="100" height="24" class="d-inline-block align-text-top">
+      Kerala Tourism
+    </a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="about.html">About Kerala</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="places.html">Places To Go</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="things.html">Things To Do</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header-right">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plan Your Trip
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="kasargod.html">Kasargod</a>
+          <a class="dropdown-item" href="kannur.html">Kannur</a>
+          <a class="dropdown-item" href="wayanad.html">Wayanad</a>
+          <a class="dropdown-item" href="kozhikode.html">Kozhikode</a>
+          <a class="dropdown-item" href="malappuram.html">Malappuram</a>
+          <a class="dropdown-item" href="palakkad.html">Palakkad</a>
+          <a class="dropdown-item" href="thrissur.html">Thrissur</a>
+          <a class="dropdown-item" href="ernakulam.html">Ernakulam</a>
+          <a class="dropdown-item" href="idukki.html">Idukki</a>
+          <a class="dropdown-item" href="kottayam.html">Kottayam</a>
+          <a class="dropdown-item" href="alappuzha.html">Alappuzha</a>
+          <a class="dropdown-item" href="pathanamthitta.html">Pathanamthitta</a>
+          <a class="dropdown-item" href="kollam.html">Kollam</a>
+          <a class="dropdown-item" href="thiruvananthapuram.html">Thiruvananthapuram</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login/Signup</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto py-4 px-0">
+            <div class="card p-0">
+                <div class="card-title text-center">
+                    <h5 class="mt-5">Hi</h5> <small class="para">Login to your account</small>
+                </div>
+                <form class="signup">
+                    <div class="form-group"><input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group"><input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <div class="row">
+                        <div class="col-6 col-sm-6"> <a href="#">
+                                <p class="text-left pt-2 ml-1">Forgot password?</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6"> <a href="#">
+                                <p class="text-right pt-2 mr-1"><a href="signup.html">Sign Up</a></p>
+                            </a> 
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

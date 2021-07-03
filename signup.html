@@ -75,16 +75,38 @@
         <div class="col-md-6 mx-auto py-4 px-0">
             <div class="card p-0">
                 <div class="card-title text-center">
-                    <h5 class="mt-5">Hi</h5> <small class="para">SignUp</small>
+                    <h5 class="mt-4">SignUp</h5>
                 </div>
-                <form class="signup">
-                    <div class="form-group"><input type="text" class="form-control" placeholder="Username">
+                <form class="form mb-3" onsubmit="return validateFn()" action="index.html" id="signup">
+
+                    <div class="form-group my-0">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+                      <small></small>
                     </div>
-                    <div class="form-group"><input type="password" class="form-control" placeholder="Password">
+                    <div class="form-group my-0">
+                      <label for="email">Email:</label>
+                      <input type="text" class="form-control" id="email">
+                      <small></small>
                     </div>
-                    <div class="form-group"><input type="number" class="form-control" placeholder="Phone Number">
+                    <div class="form-group my-0">
+                      <label for="mobile">Phone:</label>
+                      <input type="tel" class="form-control" id="mobile">
+                      <small></small>
                     </div>
-                    <button type="button" class="btn btn-primary"><a href="#">SignUp</a></button>
+                    <div class="form-group my-0">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" onkeyup="trigger()" id="password">
+                      <small></small>
+                    </div>
+                    <div class="form-group my-0">
+                      <label for="password2">Confirm Password:</label>
+                      <input type="password" class="form-control" id="password2">
+                      <small></small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary my-2"><a href="index.html" id="btn">SignUp</a></button>
+
                 </form>
             </div>
         </div>
@@ -92,6 +114,8 @@
 </div>
 
 
+
+<script src="js/signup_validation.js"></script>
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

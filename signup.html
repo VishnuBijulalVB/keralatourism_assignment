@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala | LogIn/SignUp</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login_signup.css">
+
+    <!-- Adding icon in the title bar -->
+    <link rel="icon" href="img/Kerala.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand font-weight-bold" href="index.html">
+        <img src="img/Kerala.jpg" alt="KL" width="100" height="24" class="d-inline-block align-text-top">
+        Kerala Tourism
+      </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About Kerala</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="places.html">Places To Go</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="things.html">Things To Do</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-right">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plan Your Trip
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="kasargod.html">Kasargod</a>
+            <a class="dropdown-item" href="kannur.html">Kannur</a>
+            <a class="dropdown-item" href="wayanad.html">Wayanad</a>
+            <a class="dropdown-item" href="kozhikode.html">Kozhikode</a>
+            <a class="dropdown-item" href="malappuram.html">Malappuram</a>
+            <a class="dropdown-item" href="palakkad.html">Palakkad</a>
+            <a class="dropdown-item" href="thrissur.html">Thrissur</a>
+            <a class="dropdown-item" href="ernakulam.html">Ernakulam</a>
+            <a class="dropdown-item" href="idukki.html">Idukki</a>
+            <a class="dropdown-item" href="kottayam.html">Kottayam</a>
+            <a class="dropdown-item" href="alappuzha.html">Alappuzha</a>
+            <a class="dropdown-item" href="pathanamthitta.html">Pathanamthitta</a>
+            <a class="dropdown-item" href="kollam.html">Kollam</a>
+            <a class="dropdown-item" href="thiruvananthapuram.html">Thiruvananthapuram</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login/Signup</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto py-4 px-0">
+            <div class="card p-0">
+                <div class="card-title text-center">
+                    <h5 class="mt-4">SignUp</h5>
+                </div>
+                <form class="form mb-3" onsubmit="return validateFn()" action="index.html" id="signup">
+
+                    <div class="form-group my-0">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+                      <small></small>
+                    </div>
+                    <div class="form-group my-0">
+                      <label for="email">Email:</label>
+                      <input type="text" class="form-control" id="email">
+                      <small></small>
+                    </div>
+                    <div class="form-group my-0">
+                      <label for="mobile">Phone:</label>
+                      <input type="tel" class="form-control" id="mobile">
+                      <small></small>
+                    </div>
+                    <div class="form-group my-0">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" onkeyup="trigger()" id="password">
+                      <small></small>
+                    </div>
+                    <div class="form-group my-0">
+                      <label for="password2">Confirm Password:</label>
+                      <input type="password" class="form-control" id="password2">
+                      <small></small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary my-2"><a href="index.html" id="btn">SignUp</a></button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/signup_validation.js"></script>
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
